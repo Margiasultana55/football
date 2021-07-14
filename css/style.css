@@ -157,6 +157,27 @@ section{
     margin-bottom: 190px;
 }
 
+/* ----Gallery--- */
+
+.gallery h1{
+    color: #173562;
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.gallerys{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap:20px;
+    
+}
+.gallerys img{
+    height: 300px;
+    width: 400px;
+    margin-left: 50px;
+    /* justify-content: space-around; */
+}
+
 /* ----highlight-section--- */
 .highlight{
     display: flex;
@@ -210,6 +231,7 @@ section{
         }
         nav ul li a{
             display: block;
+           
         
         }
         nav ul li a:hover{
@@ -275,17 +297,32 @@ section{
         
     }
     .highlight-info h1{
-        font-size: 20px;
+        font-size: 30px;
         font-weight: bold;
         
        
     
     }
     iframe{
-        width: 300px;
+        width: 400px;
+        
+    }
+    .gallerys{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap:20px;
+        
+    }
+    .gallery h1{
+      
+        font-size: 35px;
         
     }
 
+.gallerys img{
+        
+        width: 290px;
+    }
       
     }
     
@@ -353,7 +390,7 @@ section{
           margin-left: 270px;
       }
       .banner-info h1{
-          font-size:40px;
+          font-size:50px;
       }
       .live-button{
           font-size: 14px;
@@ -373,7 +410,7 @@ section{
         cursor: pointer;
     }
     .container{
-        margin-bottom: 40px;
+        margin-bottom: 90px;
     }
     .highlight{
         display: grid;
@@ -382,11 +419,26 @@ section{
         
     }
     .highlight-info h1{
-        font-size: 20px;
+        font-size: 35px;
         font-weight: bold;
         
        
     
     }
+    .gallerys{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap:20px;
+        
    
+    }
+    .gallery h1{
+      
+        font-size: 35px;
+        
+    }
+    .gallerys img{
+        
+        width: 300px;
+    }
     }
