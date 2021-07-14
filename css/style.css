@@ -1,0 +1,270 @@
+
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* --nav-style-- */
+nav{
+    background-color: #2D25A0;
+    height:650px;
+    width: 100%;
+    
+}
+nav ul{
+    display: inline-flex;
+    margin-top: 42px;
+    margin-left: 50px;
+    
+}
+
+nav  li{
+    list-style: none;
+    margin-left: 36px;
+}
+nav  li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    
+}
+nav ul li a:hover{
+    color: cyan;
+}
+
+.login-button{
+    float: right;
+    margin-top: 35px;
+    margin-right: 60px;
+    padding: 10px 24px;
+    background: rgb(31, 197, 197);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 4px;
+    
+    
+
+}
+.login-button i{
+    margin-right: 8px;
+}
+.login-button:hover{
+    background-color:rgba(137, 228, 228, 0.856);
+    cursor: pointer;
+}
+.menu-btn{
+    font-size: 30px;
+    color: rgb(45, 233, 233);
+    cursor: pointer;
+    margin-left: 27px;
+    margin-top: 36px;
+    display: none;
+    
+    }
+    #click{
+        display: none;
+    }
+    .banners{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+       
+      
+    }
+    .banner-info{
+        margin-left: 120px;
+        margin-top: 40px;
+        color: white;
+        font-size: 34px;
+
+    }
+    .banner-info h1{
+        margin-bottom: 2px;
+        font-weight: bold;
+    }
+    .live-button{
+        background-color: rgb(31, 197, 197);
+        color: white;
+        justify-content: center;
+        padding: 13px 20px;
+        font-size: 19px;
+        font-weight: 600;
+        border: 0;
+        border-radius: 4px;
+        
+    }
+    .live-button i{
+        margin-left: 8px;
+       
+        
+    }
+    .live-button:hover{
+        background-color:rgba(137, 228, 228, 0.856);
+        cursor: pointer;
+    }
+    .banner-img img{
+        
+        margin-top: 60px;
+        margin-right: 20px;
+        height: 400px;
+        width: 500px;
+    }
+    /* --media-queries-- --------
+    --------------*/
+
+    /* --------* Mobile-device *--------- */
+
+    @media only screen and (max-width:688px){
+        
+        nav{
+            margin-top: 0;
+            height: 850px;
+            
+        }
+        nav ul{
+            position: fixed;
+            top: 40px;
+            margin-left: 0;
+            height: 100vh;
+            width: 100%;
+            display: block;
+            padding-left: 0;
+            left: -100%;
+            transition: all 0.4s ease;
+        }
+        nav ul li{
+            margin-top:6px;
+            margin-left: 20px;
+            padding: 0;
+            
+
+        }
+        nav ul li a{
+            display: block;
+        
+        }
+        nav ul li a:hover{
+            color: cyan;
+            background: none;
+        }
+      #click:checked ~ ul{
+          left: 0%;
+      }
+      .menu-btn{
+        display: inline-block;
+        margin-top: 0px;
+        padding-top: 30px;
+        padding-left: 0px;
+        
+    }
+    .login-button{
+        display: inline-block;
+        margin-top: 30px;
+        padding: 7px 10px;
+        margin-right: 13px;
+        font-size: 12px;
+    }
+    .login-button:hover{
+        background-color:rgba(137, 228, 228, 0.856);
+    }
+    .banners{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner-info{
+        margin-left: 130px;
+        margin-top: 100px;
+    }
+    .banner-info h1{
+        font-size:20px;
+    }
+    .live-button{
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+    .banner-img img{
+        height: 200px;
+        width: 200px;
+        margin-left:100px;
+      }
+    }
+    
+/* -----tab----- */
+
+    @media only screen and (min-width:689px) and (max-width:992px) {
+        
+        nav{
+            margin-top: 0;
+            height: 790px;
+        }
+        nav ul{
+            position: fixed;
+            top: 40px;
+            margin-left: 0;
+            height: 100vh;
+          
+            width: 100%;
+            display: block;
+            padding-left: 0;
+            left: -100%;
+            transition: all 0.4s ease;
+        }
+        nav ul li{
+            margin-top:10px;
+            margin-left: 26px;
+            padding: 5px;
+            
+
+        }
+        nav ul li a{
+            display: block;
+        }
+        nav ul li a:hover{
+            color: cyan;
+            background: none;
+        }
+      #click:checked ~ ul{
+          left: 0%;
+      }
+      .menu-btn{
+          display: inline-block;
+          margin-top: 0px;
+          padding-top: 30px;
+          padding-left: 0px;
+          
+      }
+      .login-button{
+          display: inline-block;
+          margin-top: 30px;
+          padding: 7px 10px;
+          margin-right: 13px;
+          font-size: 12px;
+      }
+      .login-button:hover{
+          background-color:rgba(137, 228, 228, 0.856);
+      }
+      .banners{
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+      }
+      .banner-info{
+          margin-left: 270px;
+      }
+      .banner-info h1{
+          font-size:40px;
+      }
+      .live-button{
+          font-size: 14px;
+          padding: 8px 15px;
+      }
+      .banner-img img{
+        height: 300px;
+        width: 400px;
+        margin-left:220px;
+      }
+    }
